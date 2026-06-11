@@ -1,0 +1,39 @@
+==================================================
+MONITORING REPORT
+Generated  : 2026-06-11 10:14:03
+==================================================
+
+New events processed : 22
+Alerts generated     : 4
+By type     : {'BRUTE_FORCE_USER': 2, 'BRUTE_FORCE_IP': 2}
+By severity : {'HIGH': 4}
+
+--- NEW EVENTS ---
+  2026-06-01T08:01:12 | alice | 192.168.1.10 | LOGIN | SUCCESS
+  2026-06-01T08:03:45 | bob | 192.168.1.22 | LOGIN | FAILED
+  2026-06-01T08:03:50 | bob | 192.168.1.22 | LOGIN | FAILED
+  2026-06-01T08:03:55 | bob | 192.168.1.22 | LOGIN | FAILED
+  2026-06-01T08:04:10 | bob | 192.168.1.22 | LOGIN | FAILED
+  2026-06-01T08:04:30 | bob | 192.168.1.22 | LOGIN | FAILED
+  2026-06-01T08:05:00 | charlie | 10.0.0.5 | LOGIN | SUCCESS
+  2026-06-01T08:10:00 | alice | 192.168.1.10 | LOGOUT | SUCCESS
+  2026-06-01T08:15:00 | eve | 203.0.113.9 | LOGIN | FAILED
+  2026-06-01T08:15:05 | eve | 203.0.113.9 | LOGIN | FAILED
+  2026-06-01T08:15:10 | eve | 203.0.113.9 | LOGIN | FAILED
+  2026-06-01T08:15:15 | eve | 203.0.113.9 | LOGIN | FAILED
+  2026-06-01T08:15:20 | eve | 203.0.113.9 | LOGIN | FAILED
+  2026-06-01T08:15:25 | eve | 203.0.113.9 | LOGIN | FAILED
+  2026-06-01T08:15:30 | eve | 203.0.113.9 | LOGIN | FAILED
+  2026-06-01T09:00:00 | charlie | 10.0.0.5 | FILE_ACCESS | SUCCESS
+  2026-06-01T09:30:00 | alice | 192.168.1.10 | LOGIN | SUCCESS
+  2026-06-01T10:00:00 | dave | 192.168.1.50 | LOGIN | SUCCESS
+  2026-06-01T10:05:00 | dave | 192.168.1.50 | FILE_DELETE | SUCCESS
+  2026-06-01T10:30:00 | admin | 127.0.0.1 | LOGIN | SUCCESS
+  2026-06-01T10:30:00 | charlie | 192.168.0.1 | LOGIN | SUCCESS
+  2026-06-01T10:30:00 | charlie | 192.168.0.1 | LOGIN | SUCCESS
+
+--- ALERTS ---
+  [HIGH] BRUTE_FORCE_USER: User 'bob' had 5 failed login(s) in new events.
+  [HIGH] BRUTE_FORCE_USER: User 'eve' had 7 failed login(s) in new events.
+  [HIGH] BRUTE_FORCE_IP: IP '192.168.1.22' had 5 failed login(s) in new events.
+  [HIGH] BRUTE_FORCE_IP: IP '203.0.113.9' had 7 failed login(s) in new events.

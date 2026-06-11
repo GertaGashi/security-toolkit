@@ -1,0 +1,9 @@
+Project Notes
+=============
+This is a sample notes file used for testing file integrity.
+
+- Feature 1: Implement user login
+- Feature 2: Add dashboard view
+- Feature 3: Generate reports
+
+Last updated: 2024-06-01

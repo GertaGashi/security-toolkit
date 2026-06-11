@@ -1,0 +1,15 @@
+{
+  "app_name": "SecurityToolkit",
+  "version": "1.0.0",
+  "debug": false,
+  "allowed_hosts": ["localhost", "127.0.0.1"],
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "toolkit_db"
+  },
+  "logging": {
+    "level": "INFO",
+    "output": "logs/app.log"
+  }
+}

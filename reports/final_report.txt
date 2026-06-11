@@ -1,0 +1,142 @@
+============================================================
+  SECURITY TOOLKIT - FINAL REPORT
+  Generated: 2026-06-11 07:35:24
+============================================================
+
+============================================================
+SECTION 1: LOG ANALYSIS
+============================================================
+==================================================
+LOG ANALYSIS REPORT
+Generated: 2026-06-11 07:35:24
+==================================================
+
+--- SUMMARY ---
+Total Events : 20
+By Status    : {'SUCCESS': 8, 'FAILED': 12}
+By Action    : {'LOGIN': 17, 'LOGOUT': 1, 'FILE_ACCESS': 1, 'FILE_DELETE': 1}
+
+--- FILTERED EVENTS ---
+{'timestamp': '2024-06-01T08:01:12', 'username': 'alice', 'ip_address': '192.168.1.10', 'action': 'LOGIN', 'status': 'SUCCESS', 'country': 'US', 'device': 'Windows', 'resource': '/dashboard'}
+{'timestamp': '2024-06-01T08:03:45', 'username': 'bob', 'ip_address': '192.168.1.22', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'US', 'device': 'Mac', 'resource': '/dashboard'}
+{'timestamp': '2024-06-01T08:03:50', 'username': 'bob', 'ip_address': '192.168.1.22', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'US', 'device': 'Mac', 'resource': '/dashboard'}
+{'timestamp': '2024-06-01T08:03:55', 'username': 'bob', 'ip_address': '192.168.1.22', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'US', 'device': 'Mac', 'resource': '/dashboard'}
+{'timestamp': '2024-06-01T08:04:10', 'username': 'bob', 'ip_address': '192.168.1.22', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'US', 'device': 'Mac', 'resource': '/dashboard'}
+{'timestamp': '2024-06-01T08:04:30', 'username': 'bob', 'ip_address': '192.168.1.22', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'US', 'device': 'Mac', 'resource': '/dashboard'}
+{'timestamp': '2024-06-01T08:05:00', 'username': 'charlie', 'ip_address': '10.0.0.5', 'action': 'LOGIN', 'status': 'SUCCESS', 'country': 'UK', 'device': 'Linux', 'resource': '/admin'}
+{'timestamp': '2024-06-01T08:10:00', 'username': 'alice', 'ip_address': '192.168.1.10', 'action': 'LOGOUT', 'status': 'SUCCESS', 'country': 'US', 'device': 'Windows', 'resource': '/dashboard'}
+{'timestamp': '2024-06-01T08:15:00', 'username': 'eve', 'ip_address': '203.0.113.9', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'RU', 'device': 'Unknown', 'resource': '/admin'}
+{'timestamp': '2024-06-01T08:15:05', 'username': 'eve', 'ip_address': '203.0.113.9', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'RU', 'device': 'Unknown', 'resource': '/admin'}
+{'timestamp': '2024-06-01T08:15:10', 'username': 'eve', 'ip_address': '203.0.113.9', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'RU', 'device': 'Unknown', 'resource': '/admin'}
+{'timestamp': '2024-06-01T08:15:15', 'username': 'eve', 'ip_address': '203.0.113.9', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'RU', 'device': 'Unknown', 'resource': '/admin'}
+{'timestamp': '2024-06-01T08:15:20', 'username': 'eve', 'ip_address': '203.0.113.9', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'RU', 'device': 'Unknown', 'resource': '/admin'}
+{'timestamp': '2024-06-01T08:15:25', 'username': 'eve', 'ip_address': '203.0.113.9', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'RU', 'device': 'Unknown', 'resource': '/admin'}
+{'timestamp': '2024-06-01T08:15:30', 'username': 'eve', 'ip_address': '203.0.113.9', 'action': 'LOGIN', 'status': 'FAILED', 'country': 'RU', 'device': 'Unknown', 'resource': '/admin'}
+{'timestamp': '2024-06-01T09:00:00', 'username': 'charlie', 'ip_address': '10.0.0.5', 'action': 'FILE_ACCESS', 'status': 'SUCCESS', 'country': 'UK', 'device': 'Linux', 'resource': '/secret_docs'}
+{'timestamp': '2024-06-01T09:30:00', 'username': 'alice', 'ip_address': '192.168.1.10', 'action': 'LOGIN', 'status': 'SUCCESS', 'country': 'US', 'device': 'Windows', 'resource': '/dashboard'}
+{'timestamp': '2024-06-01T10:00:00', 'username': 'dave', 'ip_address': '192.168.1.50', 'action': 'LOGIN', 'status': 'SUCCESS', 'country': 'US', 'device': 'Mac', 'resource': '/reports'}
+{'timestamp': '2024-06-01T10:05:00', 'username': 'dave', 'ip_address': '192.168.1.50', 'action': 'FILE_DELETE', 'status': 'SUCCESS', 'country': 'US', 'device': 'Mac', 'resource': '/reports/q1.csv'}
+{'timestamp': '2024-06-01T10:30:00', 'username': 'admin', 'ip_address': '127.0.0.1', 'action': 'LOGIN', 'status': 'SUCCESS', 'country': 'US', 'device': 'Linux', 'resource': '/admin'}
+
+============================================================
+SECTION 2: FILE INTEGRITY
+============================================================
+==================================================
+FILE INTEGRITY REPORT
+Generated : 2026-06-11 07:35:24
+Folder    : data/important_files
+Baseline  : reports/baseline.json
+==================================================
+
+Baseline files : 3
+Current files  : 3
+Changed        : 0
+New files      : 0
+Deleted        : 0
+
+--- CHANGED ---
+None
+
+
+--- NEW ---
+None
+
+
+--- DELETED ---
+None
+
+============================================================
+SECTION 3: SECRETS SCAN
+============================================================
+==================================================
+SECRETS SCAN REPORT
+Generated  : 2026-06-11 07:35:24
+Folder     : data/important_files
+Files scanned : 3
+Total findings: 6
+==================================================
+
+FILE: data/important_files/config.env
+  Line 6 [PASSWORD]: password=Fake**************
+  Line 7 [API_KEY]: api_key=FAKE*********************
+  Line 8 [TOKEN]: token=eyFa***********************
+  Line 9 [SECRET]: secret=my_f*********************
+  Line 10 [PRIVATE_KEY]: private_key=----****** FAKE RSA PRIVATE KEY-----FAKEKEY-----END FAKE RSA PRIVATE KEY-----
+  Line 11 [PASSWORD]: connection_string=Serv*************************************************************
+
+
+============================================================
+SECTION 4: LOCALHOST PORT CHECK
+============================================================
+  [No data found at 'reports/port_report.txt']
+
+============================================================
+SECTION 5: MONITORING & ALERTS (VARIANT C)
+============================================================
+==================================================
+MONITORING REPORT
+Generated  : 2026-06-11 07:35:24
+==================================================
+
+New events processed : 20
+Alerts generated     : 4
+By type     : {'BRUTE_FORCE_USER': 2, 'BRUTE_FORCE_IP': 2}
+By severity : {'HIGH': 4}
+
+--- NEW EVENTS ---
+  2024-06-01T08:01:12 | alice | 192.168.1.10 | LOGIN | SUCCESS
+  2024-06-01T08:03:45 | bob | 192.168.1.22 | LOGIN | FAILED
+  2024-06-01T08:03:50 | bob | 192.168.1.22 | LOGIN | FAILED
+  2024-06-01T08:03:55 | bob | 192.168.1.22 | LOGIN | FAILED
+  2024-06-01T08:04:10 | bob | 192.168.1.22 | LOGIN | FAILED
+  2024-06-01T08:04:30 | bob | 192.168.1.22 | LOGIN | FAILED
+  2024-06-01T08:05:00 | charlie | 10.0.0.5 | LOGIN | SUCCESS
+  2024-06-01T08:10:00 | alice | 192.168.1.10 | LOGOUT | SUCCESS
+  2024-06-01T08:15:00 | eve | 203.0.113.9 | LOGIN | FAILED
+  2024-06-01T08:15:05 | eve | 203.0.113.9 | LOGIN | FAILED
+  2024-06-01T08:15:10 | eve | 203.0.113.9 | LOGIN | FAILED
+  2024-06-01T08:15:15 | eve | 203.0.113.9 | LOGIN | FAILED
+  2024-06-01T08:15:20 | eve | 203.0.113.9 | LOGIN | FAILED
+  2024-06-01T08:15:25 | eve | 203.0.113.9 | LOGIN | FAILED
+  2024-06-01T08:15:30 | eve | 203.0.113.9 | LOGIN | FAILED
+  2024-06-01T09:00:00 | charlie | 10.0.0.5 | FILE_ACCESS | SUCCESS
+  2024-06-01T09:30:00 | alice | 192.168.1.10 | LOGIN | SUCCESS
+  2024-06-01T10:00:00 | dave | 192.168.1.50 | LOGIN | SUCCESS
+  2024-06-01T10:05:00 | dave | 192.168.1.50 | FILE_DELETE | SUCCESS
+  2024-06-01T10:30:00 | admin | 127.0.0.1 | LOGIN | SUCCESS
+
+--- ALERTS ---
+  [HIGH] BRUTE_FORCE_USER: User 'bob' had 5 failed login(s) in new events.
+  [HIGH] BRUTE_FORCE_USER: User 'eve' had 7 failed login(s) in new events.
+  [HIGH] BRUTE_FORCE_IP: IP '192.168.1.22' had 5 failed login(s) in new events.
+  [HIGH] BRUTE_FORCE_IP: IP '203.0.113.9' had 7 failed login(s) in new events.
+
+Total alerts in alerts.json: 4
+  [HIGH] BRUTE_FORCE_USER: User 'bob' had 5 failed login(s) in new events.
+  [HIGH] BRUTE_FORCE_USER: User 'eve' had 7 failed login(s) in new events.
+  [HIGH] BRUTE_FORCE_IP: IP '192.168.1.22' had 5 failed login(s) in new events.
+  [HIGH] BRUTE_FORCE_IP: IP '203.0.113.9' had 7 failed login(s) in new events.
+
+============================================================
+END OF REPORT
+============================================================

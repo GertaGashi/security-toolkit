@@ -1,0 +1,28 @@
+==================================================
+PORT CHECK REPORT
+Generated : 2026-06-11 09:54:19
+Host      : 127.0.0.1
+==================================================
+
+Port    21  |  CLOSED  |  FTP
+Port    22  |  CLOSED  |  SSH
+Port    23  |  CLOSED  |  Telnet
+Port    25  |  CLOSED  |  SMTP
+Port    53  |  CLOSED  |  DNS
+Port    80  |  CLOSED  |  HTTP
+Port   110  |  CLOSED  |  POP3
+Port   135  |  OPEN    |  RPC
+Port   139  |  CLOSED  |  NetBIOS
+Port   143  |  CLOSED  |  IMAP
+Port   443  |  CLOSED  |  HTTPS
+Port   445  |  OPEN    |  SMB
+Port  3306  |  CLOSED  |  MySQL
+Port  3389  |  CLOSED  |  RDP
+Port  5432  |  CLOSED  |  PostgreSQL
+Port  5900  |  CLOSED  |  VNC
+Port  6379  |  CLOSED  |  Redis
+Port  8080  |  CLOSED  |  HTTP-Alt / Dev Server
+Port  8443  |  CLOSED  |  HTTPS-Alt
+Port 27017  |  CLOSED  |  MongoDB
+
+Total OPEN: 2/20

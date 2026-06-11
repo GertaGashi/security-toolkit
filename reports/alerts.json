@@ -1,0 +1,77 @@
+{
+  "total": 8,
+  "alerts": [
+    {
+      "alert_id": "ALERT-USER-bob-073524",
+      "type": "BRUTE_FORCE_USER",
+      "severity": "HIGH",
+      "description": "User 'bob' had 5 failed login(s) in new events.",
+      "subject": "bob",
+      "count": 5,
+      "timestamp": "2026-06-11T07:35:24.763013"
+    },
+    {
+      "alert_id": "ALERT-USER-eve-073524",
+      "type": "BRUTE_FORCE_USER",
+      "severity": "HIGH",
+      "description": "User 'eve' had 7 failed login(s) in new events.",
+      "subject": "eve",
+      "count": 7,
+      "timestamp": "2026-06-11T07:35:24.763025"
+    },
+    {
+      "alert_id": "ALERT-IP-192_168_1_22-073524",
+      "type": "BRUTE_FORCE_IP",
+      "severity": "HIGH",
+      "description": "IP '192.168.1.22' had 5 failed login(s) in new events.",
+      "subject": "192.168.1.22",
+      "count": 5,
+      "timestamp": "2026-06-11T07:35:24.763033"
+    },
+    {
+      "alert_id": "ALERT-IP-203_0_113_9-073524",
+      "type": "BRUTE_FORCE_IP",
+      "severity": "HIGH",
+      "description": "IP '203.0.113.9' had 7 failed login(s) in new events.",
+      "subject": "203.0.113.9",
+      "count": 7,
+      "timestamp": "2026-06-11T07:35:24.763038"
+    },
+    {
+      "alert_id": "ALERT-USER-bob-101403",
+      "type": "BRUTE_FORCE_USER",
+      "severity": "HIGH",
+      "description": "User 'bob' had 5 failed login(s) in new events.",
+      "subject": "bob",
+      "count": 5,
+      "timestamp": "2026-06-11T10:14:03.579621"
+    },
+    {
+      "alert_id": "ALERT-USER-eve-101403",
+      "type": "BRUTE_FORCE_USER",
+      "severity": "HIGH",
+      "description": "User 'eve' had 7 failed login(s) in new events.",
+      "subject": "eve",
+      "count": 7,
+      "timestamp": "2026-06-11T10:14:03.579668"
+    },
+    {
+      "alert_id": "ALERT-IP-192_168_1_22-101403",
+      "type": "BRUTE_FORCE_IP",
+      "severity": "HIGH",
+      "description": "IP '192.168.1.22' had 5 failed login(s) in new events.",
+      "subject": "192.168.1.22",
+      "count": 5,
+      "timestamp": "2026-06-11T10:14:03.579704"
+    },
+    {
+      "alert_id": "ALERT-IP-203_0_113_9-101403",
+      "type": "BRUTE_FORCE_IP",
+      "severity": "HIGH",
+      "description": "IP '203.0.113.9' had 7 failed login(s) in new events.",
+      "subject": "203.0.113.9",
+      "count": 7,
+      "timestamp": "2026-06-11T10:14:03.579733"
+    }
+  ]
+}
